@@ -1,5 +1,14 @@
-.nav-container{
+.navs{
     display:flex;
-    justify-content: center;
-    
+    justify-content: space-between;
+    align-items:center;
+    background-color: pink;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav-name{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
 }
