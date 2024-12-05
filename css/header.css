@@ -2,13 +2,36 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    background-color: pink;
+    background-color: rgb(243, 243, 145);
     flex-direction: row;
     list-style-type: none;
+    padding: 1rem;
+}
+.nav-logo{
+    font-size:1.5rem;
 }
 .nav-name{
     display:flex;
     flex-direction: row;
     list-style-type: none;
     gap: 1rem;
+    font-size: 1.5rem;  
+    margin-right: 15vw;
+}
+.nav-name a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top:1rem;
+}
+.food-categories{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+.food-display{
+    border: 1px solid red;
 }
