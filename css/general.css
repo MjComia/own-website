@@ -1,4 +1,49 @@
 *{
     margin:0px;
     padding:0px;
+    font-family: "Quicksand", sans-serif;
+   
+}
+.home{
+    background-image: url('/pictures/areas/boodleFight-bg.jpg'); /* Replace with your image file path */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    display: flex; /* Centers content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    background-color:rgba(0, 0, 0, 0.7);
+}
+#luzon{
+    background-image: url('/pictures/areas/luzon-bg.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    display: flex; /* Centers content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh; /* Full viewport height */
+
+
+}
+#visayas{
+    background-image: url('/pictures/areas/cebu-bg.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    display: flex; /* Centers content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh; /* Full viewport height */
+}
+#mindanao{
+    background-image: url('/pictures/areas/mindanao2-bg.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    display: flex; /* Centers content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh; /* Full viewport height */
 }

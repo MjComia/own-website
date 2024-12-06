@@ -1,0 +1,99 @@
+#luzon,#visayas,#mindanao{
+    display:flex;
+    flex-direction:column;
+    gap: 5rem;
+}
+.welcome-luzon,.welcome-visayas,.welcome-mindanao{
+    font-size: 4rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #c29d93, #faf757,
+    rgb(228, 54, 54), rgb(53, 53, 221));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip:text;
+    background-size:300%;
+    background-position: -100%;
+    animation: gradient-animation 10s infinite alternate-reverse;
+}
+
+.luzon-container,.visayas-container,.mindanao-container{
+    display:flex;
+    flex-direction:row;
+    gap: 2rem;
+}
+.luzon-pic,.visayas-pic,.mindanao-pic{
+    width:40rem;
+    border-radius:1rem;
+}
+.description-luzon,.description-visayas,.description-mindanao{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 40rem;
+}
+.luzon-pic-container,.visayas-pic-container,.mindanao-pic-container{
+    position: relative;
+}
+.view-foods1{
+    position:absolute;
+    display: flex;
+    bottom: -12px;
+    justify-content: center;
+    bottom: -0.5rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgb(0, 0, 255);
+    padding: 8px;
+    border-radius:8px;
+}
+.view-foods2{
+    position:absolute;
+    display: flex;
+    bottom: -12px;
+    justify-content: center;
+    bottom: -0.5rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgb(255, 0, 0);
+    padding: 8px;
+    border-radius:8px;
+}
+
+.view-foods3{
+    position:absolute;
+    display: flex;
+    bottom: -12px;
+    justify-content: center;
+    bottom: -0.5rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgb(252, 255, 71);
+    color:black;
+    padding: 8px;
+    border-radius:8px;
+}
+
+.luzon-pic{
+    box-shadow: 0px 2px 5px rgba(250, 249, 249, 0.973);
+}
+.visayas-pic{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.973);
+}
+.mindanao-pic{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.973);
+}
+
+
+
+
+
+
+@keyframes gradient-animation {
+    from{
+        background-position:0%;
+    }
+to{
+    background-position: 100%
+    }
+  
+} 
