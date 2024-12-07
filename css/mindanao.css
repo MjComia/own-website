@@ -1,0 +1,128 @@
+/* Food Gallery */
+body{
+    padding-top: 4rem;
+    background-image: url('/pictures/areas/davao1.jpg'); /* Replace with your image file path */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+
+}
+
+
+.next-visayas{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255); 
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    margin: 2rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.food-gallery {
+
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    column-gap:1px;
+    row-gap:1rem;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.food-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    width: 100%; /* Fixed width */
+    cursor: pointer;
+
+}
+.food-item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:12rem;
+    height:100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.food-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+
+@media(max-width:650px){
+    .food-gallery{
+    grid-template-columns:1fr 1fr ;
+    }
+}
+
+
+@media(max-width:500px){
+    .food-gallery{
+    grid-template-columns:1fr ;
+    }
+}

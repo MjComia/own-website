@@ -5,6 +5,7 @@
 }
 .welcome-luzon,.welcome-visayas,.welcome-mindanao{
     font-size: 4rem;
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
     background-image: linear-gradient(to right, #c29d93, #faf757,
     rgb(228, 54, 54), rgb(53, 53, 221));
@@ -85,9 +86,6 @@
 
 
 
-
-
-
 @keyframes gradient-animation {
     from{
         background-position:0%;
@@ -97,3 +95,6 @@ to{
     }
   
 } 
+
+
+

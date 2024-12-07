@@ -16,6 +16,10 @@
     padding: 1rem;
     z-index: 101; /* Higher than other elements */
 }
+.home-direct{
+    text-decoration: none;
+}
+
 .nav-logo{
     font-size:1.5rem;
     color:rgb(207, 207, 207);
@@ -34,7 +38,24 @@
     text-decoration: none;
     color:rgb(207, 207, 207);
 }
-
+.navs a{
+    position:relative;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+.navs a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f4f4f4;
+    transition: width 0.3s;
+}
+.navs a:hover::after {
+    width: 100%; /* Expands underline on hover */
+  }
 .logo-container{
     margin-top: 5rem;
 }
@@ -63,6 +84,19 @@
     -webkit-background-clip: text; 
 }
 
+
+
+
+@media(max-width:1345px){
+    .logo{
+    font-size:5rem;
+    }
+}
+@media(max-width:850px){
+    .logo{
+    font-size:3rem;
+    }
+}
 /* .food-area-categories{
     display:flex;
     justify-content: center;
