@@ -34,6 +34,12 @@
 }
 .luzon-pic-container,.visayas-pic-container,.mindanao-pic-container{
     position: relative;
+
+}
+
+.luzon-pic-container a,.visayas-pic-container a,.mindanao-pic-container a{
+    text-decoration: none;
+
 }
 .view-foods1{
     position:absolute;
@@ -46,6 +52,7 @@
     background-color: rgb(0, 0, 255);
     padding: 8px;
     border-radius:8px;
+    color:white;
 }
 .view-foods2{
     position:absolute;
@@ -58,6 +65,7 @@
     background-color: rgb(255, 0, 0);
     padding: 8px;
     border-radius:8px;
+    color:white;
 }
 
 .view-foods3{
@@ -69,7 +77,7 @@
     left: 50%; 
     transform: translateX(-50%); 
     background-color: rgb(252, 255, 71);
-    color:black;
+    color:rgb(0, 0, 0);
     padding: 8px;
     border-radius:8px;
 }
@@ -84,6 +92,14 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.973);
 }
 
+.luzon-pic,.visayas-pic,.mindanao-pic{
+    transition: transform 0.3s ease;
+}
+.luzon-pic:hover,.visayas-pic:hover,.mindanao-pic:hover{
+    transform: scale(1.05);
+}
+
+
 
 
 @keyframes gradient-animation {
@@ -96,5 +112,26 @@ to{
   
 } 
 
+@media (max-width:500px){
+    .welcome-luzon,.welcome-visayas,.welcome-mindanao{
+        font-size:3rem;
+    }
+    .luzon-container,.visayas-container,.mindanao-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .luzon-pic,.visayas-pic,.mindanao-pic{
+        width:20rem;
+        border-radius:0.5rem;
 
-
+    }
+    .description-luzon,.description-visayas,.description-mindanao{
+        font-size:0.75rem;
+        width: 80vw;
+    }
+    #luzon,#visayas,#mindanao{
+        overflow:hidden;
+        gap:0.5rem;
+    }
+}

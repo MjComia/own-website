@@ -4,6 +4,15 @@
     font-family: "Quicksand", sans-serif;
    
 }
+.container-all{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height:100vh;
+}
+.home, #luzon, #visayas, #mindanao{
+    scroll-snap-align: start;
+}
+
 .home{
     background-image: url('/pictures/areas/boodleFight-bg.jpg'); /* Replace with your image file path */
     background-size: cover; /* Ensures the image covers the section */

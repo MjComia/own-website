@@ -4,7 +4,7 @@ body{
     background-image: url('/pictures/areas/boracay1.jpg'); /* Replace with your image file path */
     background-size: cover; /* Ensures the image covers the section */
     background-position: center; /* Centers the image */
-
+    background-attachment: fixed; /* Keeps the background fixed */
 }
 .directory{
     display:flex;

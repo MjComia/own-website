@@ -5,6 +5,7 @@ body{
     background-size: cover; /* Ensures the image covers the section */
     background-position: center; /* Centers the image */
     height: 100vh; /* Full viewport height */
+    background-attachment: fixed; /* Keeps the background fixed */
 }
 
 .next-visayas{
