@@ -1,2 +1,2 @@
 # own-website
-Unique delicacy of every region in the Philippines
+Unique delicacies of Luzon, Visayas, and Mindanao.
